@@ -4,8 +4,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-client/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server-ha/pom.xml" />
+        <option value="$PROJECT_DIR$/bucket-service/pom.xml" />
+        <option value="$PROJECT_DIR$/bucket-client/pom.xml" />
       </list>
     </option>
   </component>

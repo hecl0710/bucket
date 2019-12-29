@@ -1,0 +1,14 @@
+server:
+  port: 10014
+spring:
+  application:
+    name: bucket-client
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://es:123456@eurekaserver:10010/eureka/,http://esha:123456@eurekaserver:10011/eureka/
+
+
+server-url.user-service-url: http://bucket-service/user/

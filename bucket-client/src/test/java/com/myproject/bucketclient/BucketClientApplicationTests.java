@@ -1,10 +1,10 @@
-package com.myproject.eurekaclient;
+package com.myproject.bucketclient;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EurekaClientApplicationTests {
+class BucketClientApplicationTests {
 
     @Test
     void contextLoads() {
