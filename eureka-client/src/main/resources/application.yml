@@ -1,5 +1,5 @@
 server:
-  port: 10011
+  port: 10012
 spring:
   application:
     name: eurekaclient
@@ -8,4 +8,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://127.0.0.1:10010/eureka
+      defaultZone: http://es:123456@eurekaserver:10010/eureka/,http://esha:123456@eurekaserver:10011/eureka/

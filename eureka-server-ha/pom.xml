@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.myproject</groupId>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-server-ha</artifactId>
     <version>v1.0</version>
-    <name>eureka-client</name>
-    <description>Demo project for eureka-client</description>
+    <name>eureka-server-ha</name>
+    <description>Demo project for javaee</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -26,9 +26,13 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
- 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

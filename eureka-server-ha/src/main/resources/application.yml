@@ -1,19 +1,18 @@
 server:
-  port: 10010
+  port: 10011
 
 spring:
   application:
     name: eurekaserver
   security:
     user:
-      name: es
+      name: esha
       password: 123456
 eureka:
   instance:
-    hostname: eurekaserver
-    environment: learning
+    hostname: eurekaserverha
   client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://esha:123456@eurekaserverha:10011/eureka/
+      defaultZone: http://es:123456@eurekaserver:10010/eureka/
