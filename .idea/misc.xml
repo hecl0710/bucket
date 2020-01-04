@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/bucket-service/pom.xml" />
         <option value="$PROJECT_DIR$/bucket-client/pom.xml" />
         <option value="$PROJECT_DIR$/bucket-client-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/bucket-api-gateway/pom.xml" />
       </list>
     </option>
   </component>

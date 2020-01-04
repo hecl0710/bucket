@@ -1,0 +1,25 @@
+server:
+  port: 10017
+
+spring:
+  application:
+    name: zuul-gateway
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://es:123456@eurekaserver:10010/eureka/,http://esha:123456@eurekaserver:10011/eureka/
+
+ribbon:
+  ConnectTimeout: 1000 #服务请求连接超时时间（毫秒）
+  ReadTimeout: 1000 #服务请求处理超时时间（毫秒）
+
+hystrix:
+  command: #用于控制HystrixCommand的行为
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000 #配置HystrixCommand执行的超时时间，执行超过该时间会进行服务降级处理
