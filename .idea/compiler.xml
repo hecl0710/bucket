@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bucket-service" />
-        <module name="eureka-server" />
-        <module name="eureka-server-ha" />
         <module name="bucket-client" />
+        <module name="eureka-server" />
+        <module name="bucket-client-feign" />
+        <module name="eureka-server-ha" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bucket-client" target="1.8" />
+      <module name="bucket-client-feign" target="1.8" />
       <module name="bucket-module" target="1.8" />
       <module name="bucket-service" target="1.8" />
       <module name="eureka-client" target="1.8" />
@@ -24,6 +26,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bucket-client" options="-parameters" />
+      <module name="bucket-client-feign" options="-parameters" />
       <module name="bucket-module" options="-parameters" />
       <module name="bucket-service" options="-parameters" />
       <module name="eureka-client" options="-parameters" />

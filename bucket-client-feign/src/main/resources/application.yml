@@ -1,0 +1,15 @@
+server:
+  port: 10016
+
+spring:
+  application:
+    name: bucket-client-feign
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://es:123456@eurekaserver:10010/eureka/,http://esha:123456@eurekaserver:10011/eureka/
+feign:
+  hystrix:
+    enabled: true
